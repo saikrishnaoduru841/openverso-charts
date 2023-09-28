@@ -33,7 +33,7 @@ web:
 
   ingress:
     # Set to true to enable ingress for web service
-    enabled: false
+    enabled: true
     annotations:
       cert-manager.io/cluster-issuer: letsencrypt
     hosts:
@@ -45,10 +45,10 @@ web:
         - jitsi.k8s.gradiant.org
 
   # Useful for ingresses that don't support http-to-https redirect by themself, (namely: GKE),
-  httpRedirect: false
+  httpRedirect: true
 
   # When tls-termination by the ingress is not wanted, enable this and set web.service.type=Loadbalancer
-  httpsEnabled: false
+  httpsEnabled: true
 
   ## Resolver IP for nginx.
   ## Set this to ClusterIP of your `kube-dns` service
