@@ -68,7 +68,7 @@ image:
   pullSecrets: []
   ## Enable debug mode
   ##
-  debug: false
+  debug: true
 
 ## @param command Override default container command (useful when using custom images)
 ##
